@@ -1,6 +1,6 @@
 # Bharat Cosmo: ISRO Rockets and Missions
 
-Welcome to **Bharat Cosmo**, your go-to repository for information on Indian Space Research Organisation (ISRO) rockets and missions. This repository aims to provide detailed insights into the various rockets developed and launched by ISRO, along with information on significant missions.
+Welcome to **Bharat Cosmo**, your go-to website for information on Indian Space Research Organisation (ISRO) rockets and missions. This repository aims to provide detailed insights into the various rockets developed and launched by ISRO, along with information on significant missions.
 
 ## Rockets
 
