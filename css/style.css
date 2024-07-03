@@ -194,7 +194,7 @@ nav h1{
   .missions{
     width: 100%;
     height: 35vw;
-    background-color: #d6d6d65f;
+    background-color: #d6d6d69b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,6 +328,10 @@ nav h1{
   }
 
   .m-left button{
+    display: none;
+  }
+
+  .s-right button{
     display: none;
   }
 
