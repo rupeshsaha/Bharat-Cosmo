@@ -12,11 +12,18 @@
         <div class="logo"></div>
         <h1>Bharat Cosmo</h1>
         <div class="menu">
-          <h4>Home</h4>
-          <h4>About</h4>
-          <h4>Mission</h4>
-          <h4>Spacecraft</h4>
-          <img src="img/bars-solid.svg" alt="menu-logo" />
+          <h4 class="desktop-menu">Home</h4>
+          <h4 class="desktop-menu">About</h4>
+          <h4 class="desktop-menu">Mission</h4>
+          <h4 class="desktop-menu">Spacecraft</h4>
+          <div class="mobile-menu">
+            <img src="img/exit.svg" alt="" class="exit-logo" />
+            <h4 class="menu-items">Home</h4>
+            <h4 class="menu-items">About</h4>
+            <h4 class="menu-items">Missions</h4>
+            <h4 class="menu-items">Spacecrafts</h4>
+          </div>
+          <img src="img/bars-solid.svg" alt="menu-logo" class="menu-logo" />
         </div>
       </nav>
       <div class="hero">
@@ -28,51 +35,19 @@
             Your go-to source of information on Indian Space Research
             Organisation (ISRO) rockets and missions.
           </h4>
-          <div class="buttons"><button>Explore Now</button></div>
+          <div class="buttons">
+            <button class="explore">Explore Now</button>
+          </div>
         </div>
 
         <div class="right">
-          <div class="buttons"><button>Explore Now</button></a></div>
+          <div class="buttons">
+            <button class="mobile-explore">Explore Now</button>
+          </div>
         </div>
       </div>
 
-      <div class="missions">
-        <div class="m-left">
-          <img src="img/astro-mission.png" alt="" />
-          <button>Explore Missions</button>
-        </div>
-        <div class="m-right">
-          <h1>
-            <span>ISRO's Trailblazing Missions: </span>Elevating India's Space
-            Legacy
-          </h1>
-          <h4>
-            ISRO missions propel India's space ambitions, from lunar
-            explorations to Mars missions, advancing scientific research and
-            satellite technology.
-          </h4>
-          <button>Explore Missions</button>
-        </div>
-      </div>
-
-      <div class="spacecrafts" id="spacecrafts">
-        <div class="s-left">
-          <h1>
-            <span>From Chandrayaan to Mars Orbiter: </span>ISRO's Remarkable
-            Spacecraft
-          </h1>
-          <h4>
-            ISRO crafts explore space, from Earth's orbit to Mars and beyond.
-          </h4>
-          <button>Explore Spacecrafts</button>
-        </div>
-        <div class="s-right">
-          <img src="img/astro-rocket.png" alt="" />
-          <button>Explore Spacecrafts</button>
-        </div>
-      </div>
+      <script src="js/main.js"></script>
     </div>
   </body>
 </html>
-
-

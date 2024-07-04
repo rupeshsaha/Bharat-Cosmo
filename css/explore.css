@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  background-image: url(/img/spaceship.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 2vw;
+  height: 3vw;
+  width: 3vw;
+}
+
+nav h1 {
+  font-size: 2.5vw;
+  font-weight: bolder;
+  padding-left: 5vw;
+}
+
+.menu img {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6vw;
+  padding: 4vw;
+  font-weight: lighter;
+  font-size: 1.5vw;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.show-menu {
+  display: flex;
+}
+
+.mobile-menu h4 {
+  display: none;
+  color: rgb(31, 28, 28);
+}
+
+/* Media query for mobile devices - nav */
+@media (max-width: 600px) {
+  .mobile-menu h4 {
+    display: block;
+    border-bottom: 1px solid;
+  }
+
+  .mobile-menu {
+    top: 1vw;
+    right: 1px;
+    position: absolute;
+    width: 50vw;
+    height: 110vw;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4.5vw;
+    z-index: 1;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu img.menu-logo {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 2vw;
+  }
+
+  img.exit-logo {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 3vw;
+    right: 5vw;
+  }
+
+  .show-menu {
+    display: flex;
+  }
+
+  nav h1 {
+    font-size: 20px;
+    padding-left: 8vw;
+  }
+
+  .logo {
+    height: 6vw;
+    width: 6vw;
+  }
+}
+
+.missions {
+  width: 100%;
+  height: 35vw;
+  /* background-color: #d6d6d69b; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.25); */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25); */
+}
+
+.m-left {
+  height: 35vw;
+  width: 50%;
+  /* background-color: #D09EF5; */
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.m-left img {
+  width: 32vw;
+  height: 32vw;
+  padding-left: 9vw;
+  padding-top: 0px;
+}
+.m-right {
+  height: 35vw;
+  width: 50%;
+  /* background-color: rgb(255, 12, 166); */
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.m-right h1 {
+  font-weight: bolder;
+  font-size: 3.5vw;
+
+  padding-left: 2vw;
+}
+
+.m-right span {
+  color: #6a2a8a;
+}
+
+.m-right h4 {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1.5vw;
+  margin-top: 0;
+}
+
+.m-right button {
+  display: flex;
+  font-weight: bolder;
+  font-size: 2vw;
+  color: white;
+  width: 20vw;
+  height: 5vw;
+  background-color: #eb5255;
+  border: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacecrafts {
+  border-top: 0.5px solid black;
+  width: 100%;
+  height: 35vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-right {
+  height: 35vw;
+  width: 50%;
+  /* background-color: #D09EF5; */
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.s-right img {
+  width: 32vw;
+  height: 32vw;
+  padding-left: 9vw;
+  padding-top: 5vw;
+}
+.s-left {
+  height: 35vw;
+  width: 50%;
+  /* background-color: rgb(255, 12, 166); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.s-left h1 {
+  font-weight: bolder;
+  font-size: 3.5vw;
+
+  padding-left: 2vw;
+}
+
+.s-left span {
+  color: #6a2a8a;
+}
+
+.s-left h4 {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1.5vw;
+  margin-top: 0;
+}
+
+.s-left button {
+  display: flex;
+  font-weight: bolder;
+  font-size: 1.7vw;
+  color: white;
+  width: 20vw;
+  height: 5vw;
+  margin-left: 1vw;
+  background-color: #eb5255;
+  border: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-left button {
+  display: none;
+}
+
+.s-right button {
+  display: none;
+}
+
+/* Media queries for missions  and spacecrafts section */
+
+@media (max-width: 600px) {
+  .missions {
+    height: 150vw;
+    display: flex;
+    margin-top: 5vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .m-left {
+    width: 100vw;
+    /* background-color: #6a2a8a; */
+    height: 90vw;
+    position: relative;
+  }
+
+  .m-left img {
+    height: 70vw;
+    width: 70vw;
+    position: absolute;
+    bottom: 10vw;
+    left: 10vw;
+  }
+  .m-right {
+    /* background-color: #ff0505; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60vw;
+  }
+
+  .m-left button {
+    display: flex;
+    font-weight: bolder;
+    font-size: 5vw;
+    color: white;
+    width: 50vw;
+    height: 11vw;
+    margin-left: 1vw;
+    background-color: #eb5255;
+    border: 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 4vw;
+    left: 24vw;
+  }
+
+  .m-right button {
+    display: none;
+  }
+
+  .m-right h1 {
+    font-size: 9vw;
+    padding: 0vw 2vw;
+    margin-top: 20vw;
+  }
+  .m-right h4 {
+    font-size: 5vw;
+    font-weight: lighter;
+    padding: 2vw 2vw;
+    margin: 0;
+  }
+
+  .spacecrafts {
+    border-top: 0.5px solid black;
+    height: 125vw;
+    display: flex;
+    margin-top: 5vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .s-right {
+    width: 100vw;
+    /* background-color: #6a2a8a; */
+    height: 90vw;
+    position: relative;
+  }
+
+  .s-right img {
+    height: 70vw;
+    width: 70vw;
+    position: absolute;
+    bottom: 7vw;
+    left: 10vw;
+  }
+  .s-left {
+    /* background-color: #ff0505; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60vw;
+  }
+
+  .s-right button {
+    display: flex;
+    font-weight: bolder;
+    font-size: 4.5vw;
+    color: white;
+    width: 50vw;
+    height: 11vw;
+    margin-left: 1vw;
+    background-color: #eb5255;
+    border: 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1vw;
+    left: 24vw;
+  }
+
+  .s-left button {
+    display: none;
+  }
+
+  .s-left h1 {
+    font-size: 9vw;
+    padding: 0vw 2vw;
+    margin: 0.5vw;
+  }
+  .s-left h4 {
+    font-size: 5vw;
+    font-weight: lighter;
+    padding: 2vw 2vw;
+    margin: 0;
+  }
+}
