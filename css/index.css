@@ -29,10 +29,6 @@ nav h1 {
   padding-left: 5vw;
 }
 
-.menu img {
-  display: none;
-}
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -43,65 +39,158 @@ nav h1 {
   font-size: 1.5vw;
 }
 
-.mobile-menu {
-  display: none;
+.mobile-menu{
+ display: none;
 }
 
-.show-menu {
-  display: flex;
-}
 
-.mobile-menu h4 {
+.mobile-menu-items{
   display: none;
   color: rgb(31, 28, 28);
 }
 
-/* Media query for mobile devices - nav */
+.menu img {
+  display: none;
+}
+
+.hero {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  flex-direction: column;
+}
+
+.left h1 {
+  font-weight: bolder;
+  font-size: 4.3vw;
+  padding-top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-bottom: 1vw;
+}
+
+.left h1 span {
+  color: #6a2a8a;
+}
+.left h4 {
+  font-size: 1.5vw;
+  font-weight: bolder;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.left button {
+  display: flex;
+  font-weight: bolder;
+  font-size: 2vw;
+  color: white;
+  width: 20vw;
+  height: 5vw;
+  margin: 2vw;
+  background-color: #eb5255;
+  border: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  padding-left: 3vw;
+  text-decoration: none;
+
+}
+
+.right {
+  width: 50%;
+  background-image: url(/img/astro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right button {
+  display: none;
+}
+
+
+
+
+
+
+/* Media query for mobile devices - hero and nav */
 @media (max-width: 600px) {
-  .mobile-menu h4 {
+
+  .mobile-menu-items{
     display: block;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid ;
   }
 
-  .mobile-menu {
-    top: 1vw;
-    right: 1px;
+  .mobile-menu{
+    top:2vw;
+    right: 3vw;
     position: absolute;
     width: 50vw;
-    height: 110vw;
+    height: 70vw;
     background-color: #ffffff;
-    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 50px;
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 4.5vw;
-    z-index: 1;
+    font-size: 4vw;
   }
 
-  .desktop-menu {
+  .exit-logo{
+    background-image: url(/img/exit.svg);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+
+  }
+
+  .show{
+    display: flex;
+  }
+
+  .hide{
+    display: none;
+  }
+  
+
+
+  .desktop-menu{
     display: none;
   }
 
-  .menu img.menu-logo {
+  #menu-logo{
     display: block;
     height: 30px;
     width: 30px;
     margin: 2vw;
+    background-image: url(/img/bars-solid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* focolor: #ffffff; */
+    /* z-index: 1; */
+    /* background-color: #6a2a8a; */
   }
 
-  img.exit-logo {
-    display: block;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 3vw;
-    right: 5vw;
-  }
+ 
 
-  .show-menu {
-    display: flex;
-  }
 
   nav h1 {
     font-size: 20px;
@@ -112,6 +201,64 @@ nav h1 {
     height: 6vw;
     width: 6vw;
   }
+
+  .left button {
+    height: 9vw;
+    width: 33vw;
+    font-size: 4vw;
+    font-weight: 700;
+    display: none;
+  }
+  .right button {
+    height: 15vw;
+    width: 60vw;
+    font-size: 6vw;
+    font-weight: 700;
+    display: flex;
+    color: white;
+    margin: 10vw;
+    background-color: #eb5255;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 85vw;
+    margin-left: 8vw;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .left h1 {
+    font-size: 10vw;
+    margin-left: 2vw;
+  }
+
+  .left h4 {
+    font-size: 5vw;
+    font-weight: 300;
+    margin-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 3vw;
+  }
+
+  .left {
+    height: 70vw;
+    width: 100vw;
+    /* background-color: grey; */
+  }
+
+  .right {
+    width: 100vw;
+    height: 90vw;
+    /* background-color: #6a2a8a; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .missions {
@@ -121,8 +268,8 @@ nav h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-top: 1px solid rgba(0, 0, 0, 0.25); */
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25); */
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .m-left {
@@ -184,7 +331,6 @@ nav h1 {
 }
 
 .spacecrafts {
-  border-top: 0.5px solid black;
   width: 100%;
   height: 35vw;
   background-color: #ffffff;
@@ -206,7 +352,7 @@ nav h1 {
   width: 32vw;
   height: 32vw;
   padding-left: 9vw;
-  padding-top: 5vw;
+  padding-top: 0px;
 }
 .s-left {
   height: 35vw;
@@ -267,7 +413,7 @@ nav h1 {
   .missions {
     height: 150vw;
     display: flex;
-    margin-top: 5vw;
+    margin-top: 15vw;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column-reverse;
@@ -333,10 +479,9 @@ nav h1 {
   }
 
   .spacecrafts {
-    border-top: 0.5px solid black;
     height: 125vw;
     display: flex;
-    margin-top: 5vw;
+    margin-top: 13vw;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -353,7 +498,7 @@ nav h1 {
     height: 70vw;
     width: 70vw;
     position: absolute;
-    bottom: 7vw;
+    bottom: 10vw;
     left: 10vw;
   }
   .s-left {
@@ -381,7 +526,7 @@ nav h1 {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 1vw;
+    bottom: 4vw;
     left: 24vw;
   }
 
